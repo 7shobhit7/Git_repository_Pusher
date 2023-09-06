@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create GitHub Repo</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Create a GitHub Repository</h1>
+    <form  id="githubForm" enctype="multipart/form-data">
+        <label for="githubUsername">GitHub Username:</label>
+        <input type="text" id="githubUsername" required>
+        
+        <label for="githubRepo">Repository Name:</label>
+        <input type="text" id="githubRepo" required>
+        
+        <label for="githubToken">GitHub Token:</label>
+        <input type="text" id="githubToken" required>
+        
+        <!-- <label for="fileInput" class="file-label">
+            <span class="plus-sign">+</span> Upload Video
+        </label>
+        <input type="file" id="fileInput" class="file-input" style="display: none;">
+        
+        <input type="submit" value="Push Repository"> -->
+
+
+        <label for="videoFile" class="file-label">
+            <span class="plus-sign">+</span> Upload Video
+        </label>
+        <input type="file" id="videoFile" name="videoFile" class="file-input" required>
+    
+        <input type="submit" value="push Repository">
+
+
+
+        
+    </form>
+    <div id="status"></div>
+    <script src="script.js"></script>
+</body>
+</html>

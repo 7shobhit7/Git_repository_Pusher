@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit and View MD File</title>
+    <style>
+        /* Paste the CSS code here */
+
+
+
+            body {
+                background-color: black; /* Desired background color */
+                margin: 0;
+                font-family: Arial, sans-serif; /* Optional font-family */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            /* Style for the container box */
+            .container {
+                background-color: #333; /* Black background color for the container */
+                border-radius: 15px; /* Rounded corners */
+                padding: 20px; /* Add some padding for spacing */
+                text-align: center;
+                margin-bottom: 400px;
+            }
+
+            /* Style for the button container */
+            .button-container {
+                display: flex;
+                flex-direction: column; /* Stack buttons vertically */
+                align-items: center;
+                gap: 10px; /* Gap between buttons */
+            }
+
+            /* Style for the buttons */
+            .box {
+                width: 150px;
+                height: 50px;
+                background-color: #0074e4; /* Blue background color for buttons */
+                color: #fff; /* White text color for buttons */
+                text-align: center;
+                line-height: 50px; /* Vertical alignment */
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px; /* Rounded corners for buttons */
+                transition: background-color 0.3s ease; /* Smooth transition for background color */
+            }
+
+            /* Hover effect for the buttons */
+            .box:hover {
+                background-color: #0059b3; /* Darker blue background color on hover */
+            }
+
+
+            /* Style for the buttons */
+            .box {
+                width: 250px;
+                height: 50px;
+                background-color: #0074e4; /* Blue background color for buttons */
+                color: #fff; /* White text color for buttons */
+                text-align: center;
+                line-height: 50px; /* Vertical alignment */
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 5px; /* Rounded corners for buttons */
+                transition: background-color 0.3s ease; /* Smooth transition for background color */
+            }
+
+            /* Hover effect for the buttons */
+            .box:hover {
+                background-color: #0059b3; /* Darker blue background color on hover */
+            }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Container for buttons -->
+        <div class="button-container">
+            <div class="box" id="viewMdBox">
+                View output.md
+            </div>
+            <div class="box" id="submitBox">
+                Push Repository
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code to handle button clicks
+        document.getElementById('viewMdBox').addEventListener('click', function () {
+            // Redirect to view the "output.md" file
+            window.location.href = 'output.md';
+        });
+
+        document.getElementById('submitBox').addEventListener('click', function () {
+            // Handle the submit button click event here
+            // You can add your submission logic
+            alert('Submit button clicked!');
+        });
+    </script>
+</body>
+</html>
